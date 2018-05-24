@@ -90,17 +90,6 @@
     <Content Include="assets\lineicons\fonts\linecons.eot" />
     <Content Include="assets\lineicons\fonts\linecons.ttf" />
     <Content Include="assets\lineicons\fonts\linecons.woff" />
-    <Content Include="DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Content>
-    <None Include="DataSet1.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
-    </None>
-    <Content Include="DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Content>
     <Content Include="DataSet3.xsc">
       <DependentUpon>DataSet3.xsd</DependentUpon>
     </Content>
@@ -264,14 +253,10 @@
     <Content Include="Student List.aspx" />
     <Content Include="Student Profile.aspx" />
     <Content Include="Student Registration.aspx" />
+    <Content Include="View Grade.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -362,12 +347,18 @@
     <Compile Include="Student Registration.aspx.designer.cs">
       <DependentUpon>Student Registration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View Grade.aspx.cs">
+      <DependentUpon>View Grade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View Grade.aspx.designer.cs">
+      <DependentUpon>View Grade.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Report3.rdlc" />
   </ItemGroup>
   <PropertyGroup>

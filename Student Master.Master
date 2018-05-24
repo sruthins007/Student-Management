@@ -261,10 +261,16 @@
                           <span>Exam Registration</span>
                       </a>
                       <ul class="sub">
-                         <li><a  href="Student Exam Registration.aspx">Exam Registration</a></li>
-                          
-                          
-                                          
+                         <li><a  href="Student Exam Registration.aspx">Exam Registration</a></li>         
+                      </ul>
+                  </li>
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Result</span>
+                      </a>
+                      <ul class="sub">
+                         <li><a  href="View Grade.aspx">View Grade</a></li>         
                       </ul>
                   </li>
                   
