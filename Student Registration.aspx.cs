@@ -57,7 +57,7 @@ namespace Student
 
 
 
-                string sql = "insert into tbl_stud (admission_no,course,first_name,last_name,dob,age,gender,email) values('" + txtadno.Text + "','" + ddlcourse.SelectedItem.Value + "','" + txtfname.Text + "','" + txtlname.Text + "','" + txtdob.Text + "','" + txtage.Text + "','" + gender + "','" + txtmail.Text + "')";
+                string sql = "insert into tbl_stud (admission_no,course,first_name,last_name,dob,age,gender,email,image) values('" + txtadno.Text + "','" + ddlcourse.SelectedItem.Value + "','" + txtfname.Text + "','" + txtlname.Text + "','" + txtdob.Text + "','" + txtage.Text + "','" + gender + "','" + txtmail.Text + "','" + SD + "')";
                 sql += "select @@IDENTITY";  // Used to take the current identity value from the table
                 //Response.Write(sql);
                 SqlDataAdapter adptt = new SqlDataAdapter(sql, con);
